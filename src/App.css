@@ -1,3 +1,15 @@
+:root {
+  --main-padding: 15px;
+  --main-font-size: 20px;
+  --main-bg-color: #f8f8f8;
+  --main-container-bg-color: white;
+  --main-txt-color: #505050;
+  --main-link-color: #0878d4;
+  --main-theme-primary-color: #0878d4;
+  --main-theme-secondary-color: white;
+  --main-theme-disabled-color: gray;
+}
+
 .App {
   text-align: center;
 }
@@ -14,18 +26,18 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: var(--main-bg-color);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: var(--main-font-size);
+  color: var(--main-txt-color);
 }
 
 .App-link {
-  color: #61dafb;
+  color: var(--main-link-color);
 }
 
 @keyframes App-logo-spin {
