@@ -12,12 +12,10 @@ export default function RTLToggleSwitch() {
     toggleRTL(v);
   }
   return (
-    <div>
-      <ToggleSwitch
-        text={"RTL"}
-        initValue={localStorage.getItem(strRtlKey) === "y"}
-        onToggle={_onToggle}
-      />
-    </div>
+    <ToggleSwitch
+      text={"RTL"}
+      initValue={localStorage.getItem(strRtlKey) === "y"}
+      onToggle={_onToggle}
+    />
   );
 }

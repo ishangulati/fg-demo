@@ -12,12 +12,10 @@ export default function ThemeToggleSwitch() {
     toggleDarkMode(v);
   }
   return (
-    <div>
-      <ToggleSwitch
-        text={"Dark Theme"}
-        initValue={localStorage.getItem(strModeKey) === "y"}
-        onToggle={_onToggle}
-      />
-    </div>
+    <ToggleSwitch
+      text={"Dark Theme"}
+      initValue={localStorage.getItem(strModeKey) === "y"}
+      onToggle={_onToggle}
+    />
   );
 }

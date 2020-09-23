@@ -1,20 +1,19 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-
 import "./App.css";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import RTLToggleSwitch from "./components/RTLToggleSwitch/RTLToggleSwitch";
 import ThemeToggleSwitch from "./components/ThemeToggleSwitch/ThemeToggleSwitch";
-import HomeViewComponent from "./components/views/HomeViewComponent";
-import SignupComponent from "./components/views/SignupComponent";
+import HomeViewComponent from "./views/HomeViewComponent/HomeViewComponent";
+import SignupComponent from "./views/SignupComponent";
 
 function App() {
   return (
     <>
+      <nav className="NavControls">
+        <ThemeToggleSwitch />
+        <RTLToggleSwitch />
+      </nav>
       <div className="App">
-        <nav>
-          <ThemeToggleSwitch />
-          <RTLToggleSwitch />
-        </nav>
         <Router>
           <Switch>
             <Route exact path="/">
