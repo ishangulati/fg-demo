@@ -3,7 +3,6 @@ import "./FormInput.css";
 
 interface IFormInputProps {
   readonly label: string;
-  readonly showError: boolean;
   readonly inputType: "text" | "email" | "password";
   readonly maxLength: number;
   readonly isRequired: boolean;

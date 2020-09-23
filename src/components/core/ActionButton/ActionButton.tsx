@@ -4,8 +4,9 @@ import "./ActionButton.css";
 interface IActionButtonProps {
   readonly buttonType: "Primary" | "Secondary";
   readonly buttonText: string;
-  readonly onClick: () => void;
+  readonly onClick?: () => void;
   readonly isSubmitButton?: boolean;
+  readonly ariaLabel?: string;
 }
 
 export default function ActionButton(props: IActionButtonProps) {
@@ -14,8 +15,11 @@ export default function ActionButton(props: IActionButtonProps) {
       className={`${
         props.buttonType === "Primary" ? "primary-btn" : "secondary-btn"
       } btn`}
+      aria-label={props.ariaLabel || props.buttonText}
       type={props.isSubmitButton ? "submit" : "button"}
-      onClick={props.onClick}
+      onClick={() => {
+        props.onClick && props.onClick();
+      }}
     >
       {props.buttonText}
     </button>

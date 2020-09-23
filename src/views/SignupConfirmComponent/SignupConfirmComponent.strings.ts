@@ -7,3 +7,7 @@ export function WelcomeText() {
 export function SigninText() {
   return localeObject["signupconfirm.signin"];
 }
+
+export function SigninHelpText() {
+  return localeObject["signupconfirm.helptext"];
+}

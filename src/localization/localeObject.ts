@@ -3,7 +3,10 @@ const localeObject = {
   emailLabel: "Email Address",
   firstnameLabel: "First Name",
   passwordLabel: "Password",
+  "signup.signuparia": "Sign up Flipgrid",
   "signupconfirm.signin": "Sign In",
+  "signupconfirm.helptext":
+    "You have been registered for this awesome service. Please check your email listed below for instructions.",
   "signup.heading": "Sign Up",
   "signup.headinghelp": "Let's",
   "signup.helptext":

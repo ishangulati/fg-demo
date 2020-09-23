@@ -4,6 +4,10 @@ export function SignupHeadingText() {
   return localeObject["signup.heading"];
 }
 
+export function SignupAriaText() {
+    return localeObject["signup.signuparia"];
+  }
+
 export function SignupHeadingHelpText() {
   return localeObject["signup.headinghelp"];
 }

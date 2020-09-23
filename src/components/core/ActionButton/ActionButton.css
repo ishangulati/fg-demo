@@ -7,8 +7,13 @@
   font-weight: bold;
   background-color: var(--main-theme-primary-color);
   color: var(--main-theme-secondary-color);
+  font-size: var(--main-font-subtext-size);
 }
 
 .primary-btn {
   background-color: var(--main-theme-tertiary-color);
+}
+
+.btn:focus {
+  outline-color: var(--main-theme-primary-color);
 }

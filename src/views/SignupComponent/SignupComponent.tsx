@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { FormEvent } from "react";
 import FormInput from "../../components/core/FormInput/FormInput";
 import ModalBox from "../../components/containers/ModalBox/ModalBox";
 import "./SignupComponent.css";
@@ -6,15 +6,30 @@ import {
   EmailLabel,
   FirstNameLabel,
   PasswordLabel,
+  SignupAriaText,
   SignupHeadingHelpText,
   SignupHeadingText,
   SignupHelpText,
 } from "./SignupComponent.strings";
 import DualHeading from "../../components/DualHeading/DualHeading";
 import ActionButton from "../../components/core/ActionButton/ActionButton";
+import { useHistory } from "react-router-dom";
 
 export default function SignupComponent() {
-  const [_showError] = useState(false);
+  const history = useHistory();
+  function formSubmit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+
+    // TODO: clean the passing logic
+    const name = ((event.target as HTMLFormElement)[0] as HTMLInputElement)
+      .value;
+    const email = ((event.target as HTMLFormElement)[1] as HTMLInputElement)
+      .value;
+    history.push({
+      pathname: "/confirm",
+      search: `?name=${name}&email=${email}`,
+    });
+  }
   return (
     <main className="signup-container">
       <ModalBox>
@@ -23,33 +38,29 @@ export default function SignupComponent() {
           mainText={SignupHeadingText()}
         />
         <p className="subtext">{SignupHelpText()}</p>
-        <form>
+        <form onSubmit={formSubmit}>
           <FormInput
             label={FirstNameLabel()}
             inputType="text"
             maxLength={25}
             isRequired
-            showError={_showError}
           />
           <FormInput
             label={EmailLabel()}
             inputType="email"
             maxLength={50}
             isRequired
-            showError={_showError}
           />
           <FormInput
             label={PasswordLabel()}
             inputType="password"
             maxLength={50}
             isRequired
-            showError={_showError}
           />
           <ActionButton
+            isSubmitButton
+            ariaLabel={SignupAriaText()}
             buttonText={SignupHeadingText()}
-            onClick={() => {
-              alert("Submit");
-            }}
             buttonType="Primary"
           />
         </form>

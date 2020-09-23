@@ -8,7 +8,7 @@ interface IDualHeadingProps {
 
 export default function DualHeading(props: IDualHeadingProps) {
   return (
-    <h2 className="dual-heading">
+    <h2 className="dual-heading" aria-live="assertive">
       {`${props.helpText} `}
       <strong>{props.mainText}</strong>
     </h2>

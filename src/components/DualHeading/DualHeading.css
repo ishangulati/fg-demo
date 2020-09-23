@@ -1,4 +1,11 @@
 .dual-heading {
-    width: 4em;
-    font-weight: 500;
+  width: 4em;
+  font-weight: 500;
+  margin: 1em 0;
+}
+
+@media screen and (max-width: 620px) {
+  .dual-heading {
+    margin: 0;
   }
+}
