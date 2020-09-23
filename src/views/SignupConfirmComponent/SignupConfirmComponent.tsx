@@ -9,6 +9,7 @@ import {
   WelcomeText,
 } from "./SignupConfirmComponent.strings";
 import { useHistory } from "react-router-dom";
+import dispatchLog from "../../logging/dispatchLog";
 
 export default function SignupConfirmComponent() {
   const history = useHistory();
@@ -22,11 +23,16 @@ export default function SignupConfirmComponent() {
     <main className="signup-confirm-container">
       <ModalBox>
         <DualHeading helpText={WelcomeText()} mainText={`${name}!`} />
-        <p className="subtext">{SigninHelpText()}</p>
+        <p aria-live="polite" className="subtext">{SigninHelpText()}</p>
         <p className="imp-text">{email}</p>
         <ActionButton
           buttonText={SigninText()}
           onClick={() => {
+            dispatchLog({
+              type: "USAGE",
+              event: { e: "SignIn button clicked" },
+            });
+
             history.push("/");
           }}
           buttonType="Primary"

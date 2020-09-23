@@ -14,6 +14,7 @@ import {
 import DualHeading from "../../components/DualHeading/DualHeading";
 import ActionButton from "../../components/core/ActionButton/ActionButton";
 import { useHistory } from "react-router-dom";
+import dispatchLog from "../../logging/dispatchLog";
 
 export default function SignupComponent() {
   const history = useHistory();
@@ -25,6 +26,8 @@ export default function SignupComponent() {
       .value;
     const email = ((event.target as HTMLFormElement)[1] as HTMLInputElement)
       .value;
+
+    dispatchLog({ type: "USAGE", event: { e: "Form submitted", name, email } });
     history.push({
       pathname: "/confirm",
       search: `?name=${name}&email=${email}`,
@@ -37,7 +40,7 @@ export default function SignupComponent() {
           helpText={SignupHeadingHelpText()}
           mainText={SignupHeadingText()}
         />
-        <p className="subtext">{SignupHelpText()}</p>
+        <p aria-live="polite" className="subtext">{SignupHelpText()}</p>
         <form onSubmit={formSubmit}>
           <FormInput
             label={FirstNameLabel()}
@@ -62,6 +65,12 @@ export default function SignupComponent() {
             ariaLabel={SignupAriaText()}
             buttonText={SignupHeadingText()}
             buttonType="Primary"
+            onClick={() =>
+              dispatchLog({
+                type: "USAGE",
+                event: { e: "SignUp button clicked" },
+              })
+            }
           />
         </form>
       </ModalBox>
