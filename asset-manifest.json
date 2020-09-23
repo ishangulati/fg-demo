@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/ishangulati/fg-demo/static/css/main.5f361e03.chunk.css",
-    "main.js": "/ishangulati/fg-demo/static/js/main.8f4ac4ce.chunk.js",
-    "main.js.map": "/ishangulati/fg-demo/static/js/main.8f4ac4ce.chunk.js.map",
-    "runtime-main.js": "/ishangulati/fg-demo/static/js/runtime-main.873f4ccc.js",
-    "runtime-main.js.map": "/ishangulati/fg-demo/static/js/runtime-main.873f4ccc.js.map",
-    "static/js/2.34c2205b.chunk.js": "/ishangulati/fg-demo/static/js/2.34c2205b.chunk.js",
-    "static/js/2.34c2205b.chunk.js.map": "/ishangulati/fg-demo/static/js/2.34c2205b.chunk.js.map",
-    "index.html": "/ishangulati/fg-demo/index.html",
-    "precache-manifest.c75a8c3a9ae570ad367e90159cb5c608.js": "/ishangulati/fg-demo/precache-manifest.c75a8c3a9ae570ad367e90159cb5c608.js",
-    "service-worker.js": "/ishangulati/fg-demo/service-worker.js",
-    "static/css/main.5f361e03.chunk.css.map": "/ishangulati/fg-demo/static/css/main.5f361e03.chunk.css.map",
-    "static/js/2.34c2205b.chunk.js.LICENSE.txt": "/ishangulati/fg-demo/static/js/2.34c2205b.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/ishangulati/fg-demo/static/media/logo.5d5d9eef.svg"
+    "main.css": "/fg-demo/static/css/main.5f361e03.chunk.css",
+    "main.js": "/fg-demo/static/js/main.0e9e193a.chunk.js",
+    "main.js.map": "/fg-demo/static/js/main.0e9e193a.chunk.js.map",
+    "runtime-main.js": "/fg-demo/static/js/runtime-main.a89ef6f5.js",
+    "runtime-main.js.map": "/fg-demo/static/js/runtime-main.a89ef6f5.js.map",
+    "static/js/2.34c2205b.chunk.js": "/fg-demo/static/js/2.34c2205b.chunk.js",
+    "static/js/2.34c2205b.chunk.js.map": "/fg-demo/static/js/2.34c2205b.chunk.js.map",
+    "index.html": "/fg-demo/index.html",
+    "precache-manifest.e14c1515ddda4d952eb1826c3b4b074e.js": "/fg-demo/precache-manifest.e14c1515ddda4d952eb1826c3b4b074e.js",
+    "service-worker.js": "/fg-demo/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/fg-demo/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.34c2205b.chunk.js.LICENSE.txt": "/fg-demo/static/js/2.34c2205b.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/fg-demo/static/media/logo.5d5d9eef.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.873f4ccc.js",
+    "static/js/runtime-main.a89ef6f5.js",
     "static/js/2.34c2205b.chunk.js",
     "static/css/main.5f361e03.chunk.css",
-    "static/js/main.8f4ac4ce.chunk.js"
+    "static/js/main.0e9e193a.chunk.js"
   ]
 }
