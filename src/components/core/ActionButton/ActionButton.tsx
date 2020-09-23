@@ -11,17 +11,19 @@ interface IActionButtonProps {
 
 export default function ActionButton(props: IActionButtonProps) {
   return (
-    <button
-      className={`${
-        props.buttonType === "Primary" ? "primary-btn" : "secondary-btn"
-      } btn`}
-      aria-label={props.ariaLabel || props.buttonText}
-      type={props.isSubmitButton ? "submit" : "button"}
-      onClick={() => {
-        props.onClick && props.onClick();
-      }}
-    >
-      {props.buttonText}
-    </button>
+    <div className="btn-container">
+      <button
+        className={`${
+          props.buttonType === "Primary" ? "primary-btn" : "secondary-btn"
+        } btn`}
+        aria-label={props.ariaLabel || props.buttonText}
+        type={props.isSubmitButton ? "submit" : "button"}
+        onClick={() => {
+          props.onClick && props.onClick();
+        }}
+      >
+        {props.buttonText}
+      </button>
+    </div>
   );
 }

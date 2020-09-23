@@ -1,3 +1,5 @@
+Go to the live app now with: [FG Challenge App](https://ishangulati.github.io/fg-demo).
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

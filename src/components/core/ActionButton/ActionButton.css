@@ -10,6 +10,11 @@
   font-size: var(--main-font-subtext-size);
 }
 
+.btn-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .primary-btn {
   background-color: var(--main-theme-tertiary-color);
 }
