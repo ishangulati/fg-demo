@@ -1,0 +1,8 @@
+.modal-box {
+  background: var(--main-container-bg-color, white);
+  padding: 2em;
+  width: 90%;
+  max-width: 30rem;
+  border-radius: 1em;
+  border: 1px solid #e0e0e0;
+}

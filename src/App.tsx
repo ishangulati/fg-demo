@@ -4,14 +4,14 @@ import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import RTLToggleSwitch from "./components/RTLToggleSwitch/RTLToggleSwitch";
 import ThemeToggleSwitch from "./components/ThemeToggleSwitch/ThemeToggleSwitch";
 import HomeViewComponent from "./views/HomeViewComponent/HomeViewComponent";
-import SignupComponent from "./views/SignupComponent";
+import SignupComponent from "./views/SignupComponent/SignupComponent";
 
 function App() {
   return (
     <>
       <nav className="NavControls">
-        <ThemeToggleSwitch />
         <RTLToggleSwitch />
+        <ThemeToggleSwitch />
       </nav>
       <div className="App">
         <Router>

@@ -8,10 +8,14 @@ export default function HomeViewComponent() {
     <header className="App-header">
       <img src={logo} className="App-logo" alt="logo" />
       <p>
-        Edit <code>src/App.tsx</code> and save to reload.
+        Other than the challenge, taken up following 
       </p>
       <ul>
-        <li></li>
+        <li>Bootstrapped the app from create-react-app</li>
+        <li>Created Sample Folder structure</li>
+        <li>Integrated Theming and RTL support</li>
+        <li>Dummy localization support</li>
+        <li>Basic Accessibility Checks</li>
       </ul>
       <Link className="App-link" to="/signup">
         Go to Sign Up!

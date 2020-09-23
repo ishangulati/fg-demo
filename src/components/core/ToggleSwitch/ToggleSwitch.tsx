@@ -16,12 +16,12 @@ export default function ToggleSwitch(props: IToggleSwitchProps) {
   }
   // change to custom element
   return (
-    <span className="toggle-switch">
+    <label className="toggle-switch">
       {props.text}:
-      <label className="switch">
+      <span className="switch">
         <input type="checkbox" onChange={_onToggle} checked={currentValue} />
         <span className="slider round"></span>
-      </label>
-    </span>
+      </span>
+    </label>
   );
 }
