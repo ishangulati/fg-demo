@@ -1,12 +1,14 @@
 :root {
   --main-padding: 15px;
   --main-font-size: 20px;
-  --main-bg-color: #f8f8f8;
+  --main-font-subtext-size: 0.85em;
+  --main-bg-color: #f1f1f1;
   --main-container-bg-color: white;
   --main-txt-color: #505050;
   --main-link-color: #0878d4;
   --main-theme-primary-color: #0878d4;
   --main-theme-secondary-color: white;
+  --main-theme-tertiary-color:#ff3a00;
   --main-theme-disabled-color: gray;
   --nav-height: 1em;
 }
@@ -18,9 +20,9 @@
 }
 
 .NavControls {
+  color: var(--main-txt-color);
   position: fixed;
   top: 0;
-  background: var(--main-theme-secondary-color);
   width: 100%;
   display: flex;
   flex-direction: row-reverse;
@@ -28,4 +30,13 @@
 
 .App-link {
   color: var(--main-link-color);
+}
+
+.subtext {
+  font-size: var(--main-font-subtext-size);
+}
+
+.imp-text{
+  font-weight: bold;
+  font-size: var(--main-font-subtext-size);
 }

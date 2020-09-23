@@ -5,6 +5,7 @@ import RTLToggleSwitch from "./components/RTLToggleSwitch/RTLToggleSwitch";
 import ThemeToggleSwitch from "./components/ThemeToggleSwitch/ThemeToggleSwitch";
 import HomeViewComponent from "./views/HomeViewComponent/HomeViewComponent";
 import SignupComponent from "./views/SignupComponent/SignupComponent";
+import SignupConfirmComponent from "./views/SignupConfirmComponent/SignupConfirmComponent";
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
             </Route>
             <Route path="/signup">
               <SignupComponent />
+            </Route>
+            <Route path="/confirm">
+              <SignupConfirmComponent />
             </Route>
           </Switch>
         </Router>

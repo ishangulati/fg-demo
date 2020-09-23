@@ -1,5 +1,5 @@
 import React from "react";
-import "./FormInput.css"
+import "./FormInput.css";
 
 interface IFormInputProps {
   readonly label: string;
@@ -14,6 +14,7 @@ export default function FormInput(props: IFormInputProps) {
     <label>
       <span className="label-text">{props.label}</span>
       <input
+        className="input-box"
         type={props.inputType}
         maxLength={props.maxLength}
         required={!!props.isRequired}
