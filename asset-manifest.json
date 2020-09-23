@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/ishangulati/fg-demo/static/css/main.5f361e03.chunk.css",
+    "main.js": "/ishangulati/fg-demo/static/js/main.8f4ac4ce.chunk.js",
+    "main.js.map": "/ishangulati/fg-demo/static/js/main.8f4ac4ce.chunk.js.map",
+    "runtime-main.js": "/ishangulati/fg-demo/static/js/runtime-main.873f4ccc.js",
+    "runtime-main.js.map": "/ishangulati/fg-demo/static/js/runtime-main.873f4ccc.js.map",
+    "static/js/2.34c2205b.chunk.js": "/ishangulati/fg-demo/static/js/2.34c2205b.chunk.js",
+    "static/js/2.34c2205b.chunk.js.map": "/ishangulati/fg-demo/static/js/2.34c2205b.chunk.js.map",
+    "index.html": "/ishangulati/fg-demo/index.html",
+    "precache-manifest.c75a8c3a9ae570ad367e90159cb5c608.js": "/ishangulati/fg-demo/precache-manifest.c75a8c3a9ae570ad367e90159cb5c608.js",
+    "service-worker.js": "/ishangulati/fg-demo/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/ishangulati/fg-demo/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.34c2205b.chunk.js.LICENSE.txt": "/ishangulati/fg-demo/static/js/2.34c2205b.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/ishangulati/fg-demo/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.873f4ccc.js",
+    "static/js/2.34c2205b.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.8f4ac4ce.chunk.js"
+  ]
+}
